@@ -1,7 +1,7 @@
 /**
  * Generate a simple sitemap that can be submited to google. A sitemap can only have 50,000 lines
  * so it must be split in multiple files if larger than 50k links. This generator only work if routes
- * are indexed in numeric and sequntial order. Change constructors to reflect site url structure.
+ * are indexed numerically. Change constructors to reflect site url structure.
  */
 var fs = require('fs');
 var stream = fs.createWriteStream("sitemap.txt");
